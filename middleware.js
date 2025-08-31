@@ -5,7 +5,6 @@ const isProtectedRoute = createRouteMatcher(['/dashboard(.*)', '/forum(.*)'])
 const isPublicRoute = createRouteMatcher([
 
   '/sign-in(.*)',
-
   '/sign-up(.*)'
 
 ])

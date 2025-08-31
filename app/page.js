@@ -10,16 +10,16 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-<Image src={"/logo.svg"} width={160} height={100} alt='logo'/>            
+              <Image src={"/logo.svg"} width={160} height={100} alt='logo' />
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-white/80 hover:text-white transition-colors">Features</a>
               <a href="#how-it-works" className="text-white/80 hover:text-white transition-colors">How it Works</a>
               <a href="#pricing" className="text-white/80 hover:text-white transition-colors">Pricing</a>
               <Link href={"/dashboard"}>
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
-                Get Started
-              </button>
+                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+                  Get Started
+                </button>
               </Link>
             </div>
           </div>
@@ -34,33 +34,33 @@ export default function LandingPage() {
               <Zap className="w-4 h-4 text-blue-400 mr-2" />
               <span className="text-blue-300 text-sm font-medium">AI-Powered Mock Interviews</span>
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Master Your
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent block">
                 Next Interview
               </span>
             </h1>
-            
+
             <p className="text-xl text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Practice with AI-powered mock interviews tailored to your role. Get instant feedback, 
+              Practice with AI-powered mock interviews tailored to your role. Get instant feedback,
               improve your skills, and land your dream job with confidence.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-             <Link href={"/dashboard"}>
-             
-              <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center cursor-pointer">
-                Start Practice Interview
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-             </Link>
+              <Link href={"/dashboard"}>
+
+                <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center cursor-pointer">
+                  Start Practice Interview
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </Link>
               <button className="group flex items-center px-8 py-4 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all duration-300">
                 <Play className="w-5 h-5 mr-2" />
                 Watch Demo
               </button>
             </div>
-            
+
             <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-white mb-2">10,000+</div>
@@ -87,11 +87,11 @@ export default function LandingPage() {
               Why Choose Logoipsum?
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto">
-              Our AI-powered platform provides comprehensive interview preparation 
+              Our AI-powered platform provides comprehensive interview preparation
               with personalized feedback and industry-specific scenarios.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -102,7 +102,7 @@ export default function LandingPage() {
                 Advanced AI analyzes your responses, body language, and communication style to provide detailed feedback.
               </p>
             </div>
-            
+
             <div className="group p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-teal-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Target className="w-7 h-7 text-white" />
@@ -112,7 +112,7 @@ export default function LandingPage() {
                 Practice with questions tailored to your specific role - Frontend, Backend, Full Stack, and more.
               </p>
             </div>
-            
+
             <div className="group p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-14 h-14 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-7 h-7 text-white" />
@@ -122,7 +122,7 @@ export default function LandingPage() {
                 Track your progress over time and identify areas for improvement with detailed analytics.
               </p>
             </div>
-            
+
             <div className="group p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Users className="w-7 h-7 text-white" />
@@ -132,7 +132,7 @@ export default function LandingPage() {
                 Connect with industry experts and peers to share experiences and get additional insights.
               </p>
             </div>
-            
+
             <div className="group p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-14 h-14 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Shield className="w-7 h-7 text-white" />
@@ -142,7 +142,7 @@ export default function LandingPage() {
                 Your interview data is encrypted and secure. Practice with complete confidence and privacy.
               </p>
             </div>
-            
+
             <div className="group p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-14 h-14 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <CheckCircle className="w-7 h-7 text-white" />
@@ -167,7 +167,7 @@ export default function LandingPage() {
               Get started with your mock interview in just three simple steps.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center group">
               <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
@@ -178,18 +178,18 @@ export default function LandingPage() {
                 Select from Frontend Developer, Backend Developer, Full Stack, or other specialized roles.
               </p>
             </div>
-            
+
             <div className="text-center group">
               <div className="w-20 h-20 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
-              
+
               <h3 className="text-2xl font-semibold text-white mb-4">Start Your Interview</h3>
               <p className="text-white/70 leading-relaxed">
                 Begin your AI-powered mock interview with questions tailored to your chosen role.
               </p>
             </div>
-            
+
             <div className="text-center group">
               <div className="w-20 h-20 bg-gradient-to-r from-pink-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <span className="text-2xl font-bold text-white">3</span>
@@ -214,7 +214,7 @@ export default function LandingPage() {
               See how Logoipsum has helped thousands land their dream jobs.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10">
               <div className="flex items-center mb-4">
@@ -235,7 +235,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -255,7 +255,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -286,15 +286,15 @@ export default function LandingPage() {
             Ready to Ace Your Next Interview?
           </h2>
           <p className="text-xl text-white/70 mb-10 leading-relaxed">
-            Join thousands of successful candidates who used Logoipsum to land their dream jobs. 
+            Join thousands of successful candidates who used Logoipsum to land their dream jobs.
             Start your journey today with a free mock interview.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-           <Link href={"/dashboard"}>
-            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center text-lg">
-              Start Free Mock Interview
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            <Link href={"/dashboard"}>
+              <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center text-lg">
+                Start Free Mock Interview
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
             </Link>
           </div>
           <p className="text-white/50 text-sm mt-6">No credit card required • Free forever plan available</p>
