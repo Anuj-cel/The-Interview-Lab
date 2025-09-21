@@ -45,7 +45,6 @@ function AddNewInterview() {
             console.log(parsedResult);
             console.log(user?.primaryEmailAddress?.emailAddress); // Check if user email is defined
 
-            console.log("I am here ")
             const res = await db.insert(MockInterview)
                 .values({
                     mockId: uuidv4(),
