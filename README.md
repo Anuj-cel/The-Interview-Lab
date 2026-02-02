@@ -1,16 +1,16 @@
-# AI Interview Mocker 🎯
+# The Interview Lab 
 
 An intelligent AI-powered interview preparation platform that simulates real technical interviews with personalized feedback and comprehensive analytics.
 
-## 🌟 Features
+##  Features
 
-- **🔐 Secure Authentication** - Clerk integration for seamless user authentication
-- **🎤 Audio/Video Recording** - Real-time audio and video capture during mock interviews
-- **🤖 AI-Powered Questions** - Dynamic question generation based on job role and requirements
-- **📊 Comprehensive Feedback** - Detailed analysis and feedback on interview performance
-- **💾 Data Persistence** - All interview data stored securely using Drizzle ORM with Neon DB
-- **📈 Progress Tracking** - Track improvement over multiple interview sessions
-- **🎯 Role-Specific Preparation** - Customized interviews for different tech positions
+- ** Secure Authentication** - Clerk integration for seamless user authentication
+- ** Audio/Video Recording** - Real-time audio and video capture during mock interviews
+- ** AI-Powered Questions** - Dynamic question generation based on job role and requirements
+- ** Comprehensive Feedback** - Detailed analysis and feedback on interview performance
+- ** Data Persistence** - All interview data stored securely using Drizzle ORM with Neon DB
+- **Progress Tracking** - Track improvement over multiple interview sessions
+- ** Role-Specific Preparation** - Customized interviews for different tech positions
 
 ## 🚀 Live Demo
 
