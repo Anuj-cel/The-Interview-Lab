@@ -22,7 +22,6 @@ function Interview({ params }) {
     const GetInteviewDetails = async () => {
         const result = await db.select().from(MockInterview)
             .where(eq(MockInterview.mockId, interviewId));
-        console.log("This is result", result);
         setInterviewData(result[0])
         setLoading(false)
     }

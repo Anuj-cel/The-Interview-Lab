@@ -9,7 +9,8 @@
     "lint": "next lint",
     "db:push": "npx drizzle-kit push",
     "db:studio": "npx drizzle-kit studio",
-    "test": "jest --verbose"
+    "test": "jest --verbose --watch",
+    "test:coverage": "jest --verbose --coverage"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.22.0",

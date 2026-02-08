@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+.pnpm
+.pnpm-store
+
+# next build
+.next
+out
+
+# env & secrets
+.env
+.env.*
+
+# git
+.git
+.gitignore
+
+# logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db

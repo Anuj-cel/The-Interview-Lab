@@ -1,5 +1,5 @@
 import { experimental_useEffectEvent } from "react"
-import LandingPage from "../page"
+import LandingPage from "../../page"
 import { render,screen } from "@testing-library/react"
 import { fireEvent } from "@testing-library/react"
 describe('LandingPage Buttons', () => {
