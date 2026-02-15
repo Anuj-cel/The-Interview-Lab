@@ -23,14 +23,12 @@ export default function Upgrade() {
         try {
             // Initiate payment
             const response = await axios.post("http://localhost:3000/api/order", data);
-            console.log("This is response ", response)
 
             //   Redirect user to PhonePe payment page given by phonepay
             if (
                 response.data &&
                 response.data.data.instrumentResponse.redirectInfo.url
             ) {
-                console.log("Redirecting")
                 window.location.href =
                     response.data.data.instrumentResponse.redirectInfo.url;
             } else {

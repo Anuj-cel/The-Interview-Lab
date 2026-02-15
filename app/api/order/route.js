@@ -58,7 +58,6 @@ export async function POST(req) {
 
     // Make the API call
     const response = await axios(options);
-console.log("Response from PhonePe:", response.data);
 
     
     // Return the response from PhonePe

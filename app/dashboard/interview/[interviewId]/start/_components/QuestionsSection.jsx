@@ -2,7 +2,6 @@ import React from 'react'
 import { Lightbulb } from 'lucide-react';
 import { Volume2 } from 'lucide-react';
 function QuestionsSection({ mockInterviewQuestion, activeQuestionIndex, setActiveQuestionIndex }) {
-  console.log("This is from questionsection", mockInterviewQuestion)
   const questions = typeof mockInterviewQuestion === 'string' ? JSON.parse(mockInterviewQuestion) : mockInterviewQuestion;
   const textToSpeach = (text) => {
     if ('speechSynthesis' in window) {

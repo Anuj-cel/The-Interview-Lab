@@ -11,7 +11,6 @@ import InterviewItemCardShimmer from './InterviewItemCardShimmer';
 
 function InterviewList() {
     const user = useUser().user;
-    console.log("This is user45465 ", user?.primaryEmailAddress?.emailAddress)
     const [interviewList, setInterviewList] = useState();
     const GetInterviewList = async () => {
         const result = await db.select()
@@ -19,14 +18,12 @@ function InterviewList() {
             .where(eq(MockInterview.createdBy, user.primaryEmailAddress.emailAddress))
             .orderBy(desc(MockInterview.id));
         setInterviewList(result);
-        console.log("Previous Mock ", result)
     }
     useEffect(() => {
         user && GetInterviewList();
     }, [user])
     return (
         <div>
-            {console.log("This is interviewList ", interviewList)}
             <h2 className='font-medium text-xl'>Previous Mock Interview</h2>
             {
                 interviewList === undefined ?

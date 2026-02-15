@@ -32,18 +32,14 @@ function AddNewInterview() {
     const onSubmit = async (e) => {
         e.preventDefault();
         setLoading(true)
-        console.log(jobPosition, jobDesc, jobExperience)
         const InputPrompt = `Job Position:${jobPosition},Job Description:${jobDesc},Years of Experience:${jobExperience},Depends of this information please give me 5 interview questions with Answered in Json format,Give Questions and Answered as field names in JSON and no other text lines as i need to parse them`
         try {
             const response = await generateContent(InputPrompt);
-            console.log(response);
             let MockResponse = await response.replaceAll("```json", "").replaceAll("```", "");
             // sending propt to the generateContent
-            console.log("New Mockresponse ", MockResponse); // Check if MockResponse is a valid JSON string
             const result = JSON.parse(MockResponse);//for removing ```json,``` so that can be parsed to .js
             setParsedResult(result);
-            console.log(parsedResult);
-            console.log(user?.primaryEmailAddress?.emailAddress); // Check if user email is defined
+           
 
             const res = await db.insert(MockInterview)
                 .values({
@@ -56,7 +52,6 @@ function AddNewInterview() {
                     createdAt: moment().format("DD-MM-yyyy")
                 }).returning({ mockId: MockInterview.mockId });//for id as table has id
 
-            console.log("Inserted Id", res);
             if (res) {
                 setOpenDialog(false)
                 setLoading(false)
@@ -65,7 +60,6 @@ function AddNewInterview() {
         } catch (error) {
             if (error.response && error.response.status === 503) {
                 // Specific handling for 503 from Gemini (or any external service)
-                console.warn("Gemini model is overloaded. Suggesting a retry.");
                 return res.status(503).json({
                     error: {
                         message: "AI service is temporarily unavailable. Please try again later.",

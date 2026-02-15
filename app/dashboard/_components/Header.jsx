@@ -7,10 +7,6 @@ import { useEffect } from 'react'
 import Link from 'next/link'
 function Header() {
    const path=usePathname();
-   useEffect(()=>{
-    console.log(path)
-
-  },[])
  
   return (
     <div className='flex p-4 items-center justify-between bg-secondary shadow-md'>

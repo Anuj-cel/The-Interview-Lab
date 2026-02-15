@@ -26,7 +26,6 @@ function Interview({ params }) {
         setLoading(false)
     }
     useEffect(() => {
-        console.log(interviewId)
         GetInteviewDetails();
     }, []);
 
